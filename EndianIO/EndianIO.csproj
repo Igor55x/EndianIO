@@ -4,31 +4,15 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Authors>Igor55</Authors>
-    <Description>A C# library that can read/write primitives and strings, using specified encoding, to streams with a specified endianness.
-Also there is `BinaryConverter` static class, which is similar to `System.BitConverter`.
-It can be used to convert to/from primitive data types using a specified endianness.</Description>
-    <Copyright>Copyright (c) 2022 Igor55</Copyright>
-    <PackageProjectUrl>https://github.com/Igor55x/EndianIO</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <FileVersion>1.0.0</FileVersion>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\LICENSE.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+    <None Remove="*.nupkg" />
+    <None Remove="*.nuspec" />
   </ItemGroup>
 
 </Project>
